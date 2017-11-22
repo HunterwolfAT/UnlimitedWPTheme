@@ -8,7 +8,7 @@ switch ($unlimitedheader) {
 		echo 'https://yt3.ggpht.com/YlyrvMJPOu3c7VTRgm0fxxKv0M7c1RUdr52x02wbOex4srHlZjnJ9t1OweV4D4sbQwOeChUeMQ=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
 		break;
 		
-	case "Björn":
+	case "SpeckObst":
 		echo 'https://yt3.ggpht.com/gxUO9gnvY5PuEmqaNDNEtr-pjRFU8FytfBnOhuBTnXD6JZhlhJjYDAoFYsERj1_SuDxqc5K3=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
 		break;
 		

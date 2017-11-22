@@ -470,19 +470,20 @@ function contributors() {
 	$authors = $wpdb->get_results("SELECT ID, user_nicename from $wpdb->users ORDER BY display_name");
 
 	foreach($authors as $author) {
-
-	echo "<a class='ua-team-item w-inline-block' href=\"".get_bloginfo('url')."/?author=";
-	echo $author->ID;
-	echo "\">";
-	#echo "<img src=\"" . substr(get_avatar($author->ID), 17, -70) . ".jpg\" class='image-24'\>";
-	echo "<img src=\""; get_pure_avatar_url($author->ID); echo "\" class='image-24'\>";
-	#echo get_avatar_url($author->ID,array("size"=>260));
-	#echo " class='image-24'>";
-	echo '<div class="ua-team-desc"><div class="text-block-9">';
-	the_author_meta('display_name', $author->ID);
-	echo '</div><div class="text-block-10">';
-	the_author_meta('user_description', $author->ID);
-	echo "</div></div></a>";
+		if ($author->ID != 9) {		// "UnlimitedAmmo" ist ja kein Teammitglied
+			echo "<a class='ua-team-item w-inline-block' href=\"".get_bloginfo('url')."/?author=";
+			echo $author->ID;
+			echo "\">";
+			#echo "<img src=\"" . substr(get_avatar($author->ID), 17, -70) . ".jpg\" class='image-24'\>";
+			echo "<img src=\""; get_pure_avatar_url($author->ID); echo "\" class='image-24'\>";
+			#echo get_avatar_url($author->ID,array("size"=>260));
+			#echo " class='image-24'>";
+			echo '<div class="ua-team-desc"><div class="text-block-9">';
+			the_author_meta('display_name', $author->ID);
+			echo '</div><div class="text-block-10">';
+			the_author_meta('user_description', $author->ID);
+			echo "</div></div></a>";
+		}
 	}
 }
 

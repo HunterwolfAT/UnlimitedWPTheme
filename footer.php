@@ -1,5 +1,5 @@
 <div class="footer">
-    <div class="container-3 w-container"><img src="http://unlimitedammo.de/wp-content/themes/UA-html5blank/custom-assets/images/signet.png" width="100" class="image-22">
+    <div class="container-3 w-container"><img src="https://unlimitedammo.de/wp-content/themes/UA-html5blank/custom-assets/images/signet.png" width="100" class="image-22">
       <div class="ua-social-footer">
         <a href="<?php echo ($rss2_url = get_bloginfo_rss('rss2_url')); ?>" class="profile ua-social-button w-clearfix w-inline-block">
           <div class="button-icon rss"></div>
