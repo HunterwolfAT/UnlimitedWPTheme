@@ -11,6 +11,8 @@
 	$posttype = get_post_type();
 ?>
 
+<?php wp_oembed_remove_provider( '*twitter*' ); ?>
+
 <?php if (!is_paged()) { ?>
 
 	<?php $i = 0; ?>
@@ -153,11 +155,11 @@
 
 <div class="section-8">
 	<div class="container-5 w-container">
+        	<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<div class="w-embed w-script">
 			<a class="twitter-timeline" href="<?php include 'socialtwitter.php'; ?>" data-tweet-limit="3" data-theme="dark" data-chrome="transparent nofooter"></a>
-        	<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      	</div>
-    </div>
+      		</div>
+    	</div>
 </div>
 
 <?php }; ?>

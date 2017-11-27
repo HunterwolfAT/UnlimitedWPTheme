@@ -90,7 +90,6 @@
         <div class="ut-video-frame">
 			
 			<?php $i = 0; ?>
-		
 			
 			<?php $query2 = new WP_Query( array( 'post_type' => 'podcast', 'posts_per_page' => 5 ) ); ?>
 			
@@ -153,11 +152,7 @@
 			
 			
 			<div class="container-6 w-container">
-      <a href="#" class="link-block w-clearfix w-inline-block">
-        <div class="text-block-11">Mehr</div>
-        <div class="text-block-12"></div>
-      </a>
-    </div>
+ 					<?php html5wp_pagination( ); ?>
     </div>
 
 

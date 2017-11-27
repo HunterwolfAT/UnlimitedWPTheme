@@ -22,7 +22,7 @@ switch ($unlimiteduser) {
         
 		break;
 		
-	case "Björn":
+	case "SpeckObst":
 		
         echo '<a target="_blank" href="https://www.youtube.com/channel/UC6P0k6iVUyvT_8oVwdgidag" class="ua-social-button w-clearfix w-inline-block">
 	<div class="button-icon youtube"></div>
@@ -73,7 +73,7 @@ switch ($unlimiteduser) {
         
 		break;
 		
-    case "Martin":
+    case "AuBanan!":
 		
         echo '<a target="_blank" href="https://www.youtube.com/channel/UC0E-CsUUgPl_3nAtkTSNpCw" class="ua-social-button w-clearfix w-inline-block">
 	<div class="button-icon youtube"></div>

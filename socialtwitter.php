@@ -10,7 +10,7 @@ switch ($unlimiteduser) {
         echo 'https://twitter.com/89Takezo';
 			break;
 		
-	case "Björn":
+	case "SpeckObst":
 		
         echo 'https://twitter.com/SpeckObst';
         
@@ -28,7 +28,7 @@ switch ($unlimiteduser) {
         
 		break;
 		
-    case "Martin":
+    case "AuBanan!":
 		
         echo 'https://twitter.com/Schlabbermull';
         
