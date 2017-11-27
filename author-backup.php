@@ -11,16 +11,9 @@
 	$posttype = get_post_type();
 ?>
 
-<?php if (!is_paged()) { ?>
+<?php the_post(); ?>
 
-	<?php $i = 0; ?>
-
-	<?php $queryautor = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 11, 'author' => get_the_author_meta('ID')) ); ?>
-	<?php if ($queryautor->have_posts()): while ($queryautor->have_posts()) : $queryautor->the_post(); ?>
-
-	<?php $i++ ?>
-
-	<?php if ($i == 1) { ?>
+	<?php if (!is_paged()) { ?>
 
 		<div class="ua-profile-header" style="background-image:url(<?php include 'socialmediaheader.php'; ?>)"></div>
 
@@ -32,7 +25,7 @@
 				</div>
 
 				<div class="social-buttons w-clearfix" style="text-align: center !important; float: none;">
-					<!-- PAGINANATION HERE -->
+					<?php include 'socialmedialinks.php'; ?>
 				</div>
 			</div>
 		</div>
@@ -68,44 +61,9 @@
 			</div>
 		</div>
 
-		<div class="section-6" id="morevideos">
-    		<div class="w-container">
-      			<div class="div-block-38">
-					<h1 class="headline-main">Mehr von </h1>
-					<h1 class="headline-main headline-main-sub"><?php the_author(); ?></h1>
-			  	</div>
-    		</div>
-			
-    	<div class="contain container w-container">
-
-	<?php } else { ?>
-			
-		<div data-ix="ut-thumbnail-overiew-animation" class="ut-thumbnail-overview"><a href="<?php the_permalink(); ?>" class="">
-			<div class="ar_container">
-				<div class="ar_dummy"></div>
-				<div class="ar_content ua-thumbnail-image" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">&nbsp;</div>
-			</div>
-		<div class="ut-thumbnail-desc"><div class="ua-thumbnail-title"><?php the_title(); ?></div></div></a></div>
-			
 	<?php }; ?>
-			
-			
-	<?php endwhile; ?><?php wp_reset_postdata(); ?>
-			
-			</div>
-		 
-		<div class="container-6 w-container">
- 					<?php html5wp_pagination(); ?>
-	    </div>
-			
-	</div>
-	
-	<?php endif; ?>
 
-		
-<?php } else { ?>
-
-<div class="section-6">
+		<div class="section-6">
     		<div class="w-container">
       			<div class="div-block-38">
 					<h1 class="headline-main">Mehr von </h1>
@@ -115,10 +73,15 @@
 			
     	<div class="contain container w-container">
 		
-			
 		
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-					
+	<?php if (!is_paged()) { ?>
+		
+		
+			<?php $query4 = new WP_Query( array( 'posts_per_page' => 4 ) ); ?>
+			
+			<?php if ($query4->have_posts()): while ($query4->have_posts()) : $query4->the_post(); ?>
+			
+			
 			
 			<div data-ix="ut-thumbnail-overiew-animation" class="ut-thumbnail-overview"><a href="<?php the_permalink(); ?>" class="">
 				<div class="ar_container">
@@ -127,17 +90,30 @@
 					</div>
 				<div class="ut-thumbnail-desc"><div class="ua-thumbnail-title"><?php the_title(); ?></div></div></a></div>
 
-			<?php endwhile; ?><?php wp_reset_postdata(); ?>
+			<?php endwhile; ?>
 			
-			</div>
-		 
-		<div class="container-6 w-container">
- 					<?php html5wp_pagination(); ?>
-	    </div>
+			<?php wp_reset_postdata(); ?>
+				
+			<?php endif; ?>
+		
+	<?php } else { ?>
+		
+		<?php $query4 = new WP_Query( array( 'posts_per_page' => 10 ) ); ?>
 			
-	</div>
+			<?php if ($query4->have_posts()): while ($query4->have_posts()) : $query4->the_post(); ?>
 			
 			
+			
+			<div data-ix="ut-thumbnail-overiew-animation" class="ut-thumbnail-overview"><a href="<?php the_permalink(); ?>" class="">
+				<div class="ar_container">
+						<div class="ar_dummy"></div>
+						<div class="ar_content ua-thumbnail-image" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">&nbsp;</div>
+					</div>
+				<div class="ut-thumbnail-desc"><div class="ua-thumbnail-title"><?php the_title(); ?></div></div></a></div>
+
+			<?php endwhile; ?>
+			
+			<?php wp_reset_postdata(); ?>
 				
 			<?php endif; ?>
 		
@@ -147,17 +123,23 @@
 			
 	
       
-    	
+    	</div>
+		 
+		<div class="container-6 w-container">
+      		<?php echo paginate_links( ); ?>
+	    </div>
+			
+	</div>
 
 <?php if (!is_paged()) { ?>
 
 <div class="section-8">
 	<div class="container-5 w-container">
-        	<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<div class="w-embed w-script">
 			<a class="twitter-timeline" href="<?php include 'socialtwitter.php'; ?>" data-tweet-limit="3" data-theme="dark" data-chrome="transparent nofooter"></a>
-      		</div>
-    	</div>
+        	<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      	</div>
+    </div>
 </div>
 
 <?php }; ?>

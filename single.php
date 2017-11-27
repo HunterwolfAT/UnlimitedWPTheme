@@ -14,11 +14,9 @@
 	
 ?>
 
-
-
 <!-- Wenn Post -->
 
-<?php if ( $posttype == 'post' ) { ?>
+<?php if ( $posttype == 'post') { ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -59,8 +57,8 @@
 	 <div class="section-6">
     <div class="w-container">
       <div class="div-block-38">
-        <h1 class="headline-main">weitere videos</h1>
-        <h1 class="headline-main headline-main-sub">von <?php the_author(); ?></h1>
+        <h1 class="headline-main">Mehr von</h1>
+        <h1 class="headline-main headline-main-sub"> <?php the_author(); ?></h1>
       </div>
     </div>
     <div class="contain container w-container">
@@ -82,7 +80,7 @@
     </div>
 		 
 		 <div class="container-6 w-container">
-      <a href="#" class="link-block w-clearfix w-inline-block">
+      <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>#morevideos" class="link-block w-clearfix w-inline-block" target="_blank">
         <div class="text-block-11">Mehr</div>
         <div class="text-block-12"></div>
       </a>
@@ -104,7 +102,7 @@
 
 <!-- Wenn Podcast -->
 
-<?php } elseif ( $posttype == 'podcast' ) { ?>
+<?php } elseif ( $posttype == 'podcast') { ?>
 
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
@@ -158,8 +156,8 @@
 <div class="section-6">
     <div class="w-container">
       <div class="div-block-38">
-        <h1 class="headline-main">weitere videos</h1>
-        <h1 class="headline-main headline-main-sub">von <?php the_author(); ?></h1>
+        <h1 class="headline-main">Mehr von</h1>
+        <h1 class="headline-main headline-main-sub"> <?php the_author(); ?></h1>
       </div>
     </div>
     <div class="contain container w-container">
@@ -187,7 +185,7 @@
     </div>
 		 
 		 <div class="container-6 w-container">
-      <a href="#" class="link-block w-clearfix w-inline-block">
+      <a href="<?php echo home_url(); ?>/tag/podcast/" class="link-block w-clearfix w-inline-block">
         <div class="text-block-11">Mehr</div>
         <div class="text-block-12"></div>
       </a>

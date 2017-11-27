@@ -237,6 +237,25 @@ function html5wp_pagination()
     }
 }
 
+function podcast_pagination()
+{
+    global $wp_query;
+    if ($wp_query->max_num_pages > 1)
+    {
+	    echo "<div class=\"pagination\">";
+	    $big = 999999999;
+	    echo paginate_links(array(
+		'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+		'format' => '?paged=%#%',
+		'next_text' => __('N&auml;chste Seite »'),
+		'prev_text' => __('« Vorherige Seite'),
+		'current' => max(1, get_query_var('paged')),
+		'total' => $wp_query->max_num_pages
+	    ));
+	    echo "</div>";
+    }
+}
+
 // Custom Excerpts
 function html5wp_index($length) // Create 20 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
 {

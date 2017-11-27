@@ -51,6 +51,7 @@
 
   <div class="ua-header-intro">
     <div class="grid-base ua-logo">
+		<a class="ua-homelink" href="<?php echo home_url(); ?>">&nbsp;</a>
       <div data-collapse="medium" data-animation="default" data-duration="400" class="ua-nav w-nav">
         <nav role="navigation" class="nav-menu w-nav-menu"><?php html5blank_nav(); ?></nav>
 	  <!--a href="#" class="nav-link w-nav-link">Home</a><a href="#" class="nav-link w-nav-link">About</a><a href="#" class="nav-link w-nav-link">Contact</a-->
@@ -67,6 +68,7 @@
 <div class="header-detail">
     <div class="div-block-36">
       <div class="grid-base ua-logo">
+		  <a class="ua-homelink" href="<?php echo home_url(); ?>">&nbsp;</a>
         <div data-collapse="medium" data-animation="default" data-duration="400" class="ua-nav w-nav">
           <nav role="navigation" class="nav-menu w-nav-menu"><?php html5blank_nav(); ?></nav>
           <div class="menu-button w-nav-button">

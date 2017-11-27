@@ -1745,3 +1745,50 @@ display: inline-block;
 	background-color: rgba(37, 39, 43, .35);
 	
 }
+
+
+
+.pagination {
+	border-radius: 25px;
+	display: inline-block;
+	padding: 0px 5px;
+	height: 50px;
+	line-height: 50px;
+
+	background-color: #2f3136;
+	font-family: Roboto, sans-serif;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #fff;
+}
+
+.page-numbers {
+		display: inline-block;
+	border-radius: 20px;
+	background-color: #484b53;
+	height: 40px;
+	min-width: 40px;
+	line-height: 40px;
+	color: #fff;
+}
+
+a.page-numbers:hover, .page-numbers.current {
+	background-color: #141618;
+}
+
+a.next, a.prev  {
+	
+	padding: 0px 15px;
+}
+
+.dots {
+	background-color: transparent;
+}
+
+.ua-homelink {
+	position: absolute;
+	width: 250px;
+	height: 50px;
+	background: transparent;
+	z-index: 5000;
+}

@@ -151,9 +151,14 @@
       </div>
 			
 			
-			<div class="container-6 w-container">
- 					<?php html5wp_pagination( ); ?>
-    </div>
+			<div class="container-6 w-container"> 
+					<!-- Special Podcast Pagination -->
+ 					<?php //podcast_pagination( ); ?>
+					<a href="<?php echo home_url(); ?>/tag/podcast/" class="link-block w-clearfix w-inline-block">
+        				<div class="text-block-11">Mehr</div>
+				        <div class="text-block-12"></div>
+					</a>
+    			</div>
 
 
   </div>
@@ -167,7 +172,7 @@
       <h1 class="headline-main headline-main-sub">Team</h1><a href="<?php echo ($rss2_url = get_bloginfo_rss('rss2_url')); ?>" class="ua-section-interface w-button"></a></div>
   </div>
  
-  <div class="ua-team-overview">
+  <div id="team" class="ua-team-overview">
     <div class="grid-base ua-team">
 
 	<?php contributors(); ?>
