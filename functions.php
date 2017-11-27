@@ -221,13 +221,20 @@ function my_remove_recent_comments_style()
 function html5wp_pagination()
 {
     global $wp_query;
-    $big = 999999999;
-    echo paginate_links(array(
-        'base' => str_replace($big, '%#%', get_pagenum_link($big)),
-        'format' => '?paged=%#%',
-        'current' => max(1, get_query_var('paged')),
-        'total' => $wp_query->max_num_pages
-    ));
+    if ($wp_query->max_num_pages > 1)
+    {
+	    echo "<div class=\"pagination\">";
+	    $big = 999999999;
+	    echo paginate_links(array(
+		'base' => str_replace($big, '%#%', get_pagenum_link($big)),
+		'format' => '?paged=%#%',
+		'next_text' => __('N&auml;chste Seite »'),
+		'prev_text' => __('« Vorherige Seite'),
+		'current' => max(1, get_query_var('paged')),
+		'total' => $wp_query->max_num_pages
+	    ));
+	    echo "</div>";
+    }
 }
 
 // Custom Excerpts
