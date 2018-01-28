@@ -195,16 +195,7 @@ a {
 }
 
 .grid-base.ua-logo {
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background-image: url('../images/logo-full-border.png');
-  background-size: 225px;
-  background-repeat: no-repeat;
+  
 }
 
 .grid-base.ua-team {
@@ -573,7 +564,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 320px;
+  height: 300px;
   padding-top: 2em;
   padding-right: 1em;
   padding-left: 1em;
@@ -719,7 +710,7 @@ a {
 
 .ua-new-teaser-mobile {
   width: 100%;
-  background-color: #121212;
+  background-color: #141618;
 }
 
 .ua-team-overview {
@@ -766,8 +757,9 @@ a {
 }
 
 .ua-profile-header {
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 300px;
+  width:100%;
   background-image: url('../images/channels4_banner2.jpg');
   background-position: 50% 50%;
   background-size: cover;
@@ -775,6 +767,8 @@ a {
 
 .div-block-36 {
   position: static;
+  overflow:hidden;
+  height: 50px;
 }
 
 .ua-viewport {
@@ -1351,6 +1345,7 @@ display: inline-block;
     height: 200px;
   }
   .div-block-36 {
+    overflow:visible;
     width: 100%;
   }
   .ua-container-typography {
@@ -1586,7 +1581,7 @@ display: inline-block;
     float: right;
   }
   .ua-teaser-flex {
-    height: 360px;
+    height: 310px;
   }
   .ua-thumbnail-title {
     font-size: 1.2em;
@@ -1785,10 +1780,39 @@ a.next, a.prev  {
 	background-color: transparent;
 }
 
+
+
 .ua-homelink {
 	position: absolute;
 	width: 250px;
 	height: 50px;
 	background: transparent;
 	z-index: 5000;
+	
+	-webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-image: url('../images/logo-full-border.png');
+  background-size: 225px;
+  background-repeat: no-repeat;
+}
+
+.ua-homelink:hover, .ua-homelink:focus {
+	background-image: url('../images/logo-full-border-hover.png');
+}
+
+
+.ua-homelink.home {
+	height: 80px !important;
+}
+
+@media (max-width: 767px) {
+	
+	.ua-homelink.home {
+	height: 50px !important;
+}
 }

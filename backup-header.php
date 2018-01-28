@@ -53,19 +53,15 @@
 	<div class="ua-header-intro">
     <div class="grid-base ua-logo">
 			<a class="ua-homelink home" href="<?php echo home_url(); ?>">&nbsp;</a>
-		
       <div class="ua-nav w-nav" data-animation="default" data-collapse="medium" data-duration="400">
         <nav class="nav-menu w-clearfix w-nav-menu" role="navigation">
 			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>">Home</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/tag/podcast">Podcast</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/category/videospiele">Videospiele</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/category/anime">Anime & Manga</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/category/filme">Filme & Serien</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/category/sonstiges">Sonstiges</a>
-			<a class="nav-link w-nav-link" href="https://discord.gg/5hH4VxW"><img src="https://unlimitedammo.de/wp-content/themes/UA-html5blank/custom-assets/images/discord-white.png" width="24px"/></a>
+			<a class="nav-link w-nav-link" href="#">About</a>
+			<a class="nav-link w-nav-link" href="#">Contact</a>
+          
 			<div class="form-block w-form">
             <form class="ua-nav-searchform w-clearfix" method="get" action="<?php echo home_url(); ?>" role="search">
-				<label class="ua-nav-searchlabel w-hidden-medium w-hidden-small w-hidden-tiny" data-ix="searchfield-appear" for="search"></label>
+				<label class="ua-nav-searchlabel w-hidden-medium w-hidden-small w-hidden-tiny" data-ix="searchfield-appear"></label>
               <div class="ua-nav-searchitems w-clearfix">
 				  <input class="ua-nav-searchfield w-input" data-name="search" id="search" maxlength="256" name="s" placeholder="Suche" type="search">
 				  
@@ -82,6 +78,21 @@
       </div>
     </div>
   </div>
+	
+	  <div class="ua-header-intro">
+    <div class="grid-base ua-logo">
+		<a class="ua-homelink home" href="<?php echo home_url(); ?>">&nbsp;</a>
+      <div data-collapse="medium" data-animation="default" data-duration="400" class="ua-nav w-nav">
+        <nav role="navigation" class="nav-menu w-nav-menu"><?php html5blank_nav(); ?></nav>
+	  <!--a href="#" class="nav-link w-nav-link">Home</a><a href="#" class="nav-link w-nav-link">About</a><a href="#" class="nav-link w-nav-link">Contact</a-->
+		
+        <div class="menu-button w-nav-button">
+          <div class="ua-burger w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <?php } else { ?>
@@ -90,29 +101,8 @@
     <div class="div-block-36">
       <div class="grid-base ua-logo">
 		  <a class="ua-homelink" href="<?php echo home_url(); ?>">&nbsp;</a>
-		  
-      	<div class="ua-nav w-nav" data-animation="default" data-collapse="medium" data-duration="400">
-	  <nav class="nav-menu w-clearfix w-nav-menu" role="navigation">
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>">Home</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/tag/podcast">Podcast</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/category/videospiele">Videospiele</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/category/anime">Anime & Manga</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/category/filme">Filme & Serien</a>
-			<a class="nav-link w-nav-link" href="<?php echo home_url(); ?>/category/sonstiges">Sonstiges</a>
-			<a class="nav-link w-nav-link" href="https://discord.gg/5hH4VxW"><img src="https://unlimitedammo.de/wp-content/themes/UA-html5blank/custom-assets/images/discord-white.png" width="24px"/></a>
-			  <div class="form-block">
-            <form class="ua-nav-searchform w-clearfix" method="get" action="<?php echo home_url(); ?>" role="search">
-				<label class="ua-nav-searchlabel w-hidden-medium w-hidden-small w-hidden-tiny" data-ix="searchfield-appear" for="search"></label>
-              <div class="ua-nav-searchitems w-clearfix">
-				  <input class="ua-nav-searchfield w-input" data-name="search" id="search" maxlength="256" name="s" placeholder="Suche" type="search">
-				  
-				  <button class="ua-nav-searchbutton w-button" type="submit" role="button"></button>
-				</div>
-            </form>
-            
-          </div>
-			  
-			</nav>
+        <div data-collapse="medium" data-animation="default" data-duration="400" class="ua-nav w-nav">
+          <nav role="navigation" class="nav-menu w-nav-menu"><?php html5blank_nav(); ?></nav>
           <div class="menu-button w-nav-button">
             <div class="ua-burger w-icon-nav-menu"></div>
           </div>

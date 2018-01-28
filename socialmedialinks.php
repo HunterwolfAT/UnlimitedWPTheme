@@ -150,6 +150,22 @@ switch ($unlimiteduser) {
 		break;
 	
 		
+    case "Tommysomething":
+		
+        echo '<a target="_blank" href="https://www.youtube.com/user/MrTommysomething" class="ua-social-button w-clearfix w-inline-block">
+	<div class="button-icon youtube"></div>
+	<div class="button-text">YouTube</div>
+</a>
+<a target="_blank" href="https://twitter.com/Tommysomething" class="ua-social-button w-clearfix w-inline-block">
+	<div class="button-icon twitter"></div>
+	<div class="button-text">Twitter</div>
+</a>
+<a target="_blank" href="'.get_author_feed_link( $unlimitedid, "" ).'" class="ua-social-button w-clearfix w-inline-block">
+	<div class="button-icon rss"></div>
+	<div class="button-text">rss</div>
+</a>';
+        
+		break;
 }
 
 	

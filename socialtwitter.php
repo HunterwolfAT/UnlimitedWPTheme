@@ -53,6 +53,11 @@ switch ($unlimiteduser) {
 		break;
 	
 		
+    case "Tommysomething":
+		
+        echo 'https://twitter.com/Tommysomething';
+        
+		break;
 }
 
 	

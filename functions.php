@@ -521,5 +521,25 @@ function get_pure_avatar_url($id) {
 	echo substr(get_avatar($id), 17, -70) . ".jpg";
 }
 
+function my_post_queries( $query ) {
+	// do not alter the query on wp-admin pages and only alter it if it's the main query
+	if (!is_admin() && $query->is_main_query()) {
+		// alter the query for the category page
+		
+		if (is_category('Anime')) {
+			$query->set('category_name','anime,manga');
+		}
+		if (is_category('Manga')) {
+			$query->set('category_name','anime,manga');
+		}
+		if (is_category('Filme')) {
+			$query->set('category_name','filme,serien');
+		}
+		if (is_category('Serien')) {
+			$query->set('category_name','filme,serien');
+		}
+	}
+}
+add_action( 'pre_get_posts', 'my_post_queries' );
 
 ?>

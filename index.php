@@ -4,7 +4,7 @@
 	<div class="ua-section-heading">
 		<div class="grid-base w-clearfix">
 			<h1 class="headline-main">Newest</h1>
-			<h1 class="headline-main headline-main-sub">Stuff</h1><a target="_blank" href="<?php echo ($rss2_url = get_bloginfo_rss('rss2_url')); ?>" class="ua-section-interface w-button"></a>
+			<h1 class="headline-main headline-main-sub">Videos</h1><a target="_blank" href="<?php echo ($rss2_url = get_bloginfo_rss('rss2_url')); ?>" class="ua-section-interface w-button"></a>
 		</div>
 	</div>
 
@@ -43,6 +43,8 @@
 		</div>
 	</div>
 
+
+
 <div class="ua-new-teaser-mobile w-hidden-main">
     <div class="ua-teaser-flex w-clearfix">
 		
@@ -74,12 +76,20 @@
     </div>
   </div>
 
-	
+
+<div class="ua-new-teaser-desktop ut-podcast-teaser">
+<div class="container-6 w-container"> 
+
+					<a href="<?php echo home_url(); ?>/category/videos/" class="link-block w-clearfix w-inline-block">
+        				<div class="text-block-11">Mehr</div>
+				        <div class="text-block-12"></div>
+					</a>
+    			</div></div>
 
 
 	<div class="ua-section-heading">
     <div class="grid-base w-clearfix">
-      <h1 class="headline-main">Ulimited</h1>
+      <h1 class="headline-main">Unlimited</h1>
       <h1 class="headline-main headline-main-sub">Topic</h1><a target="_blank" href="https://itunes.apple.com/de/podcast/unlimited-topic/id1257896606?mt=2" class="itunes ua-section-interface w-button"></a><a target="_blank" href="https://unlimitedammo.de/feed/mp3/" class="ua-section-interface w-button"></a></div>
   </div>
 		

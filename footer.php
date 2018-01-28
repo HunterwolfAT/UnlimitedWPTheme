@@ -1,17 +1,21 @@
 <div class="footer">
     <div class="container-3 w-container"><img src="https://unlimitedammo.de/wp-content/themes/UA-html5blank/custom-assets/images/signet.png" width="100" class="image-22">
       <div class="ua-social-footer">
-        <a href="<?php echo ($rss2_url = get_bloginfo_rss('rss2_url')); ?>" class="profile ua-social-button w-clearfix w-inline-block">
+        <a target="_blank" href="<?php echo ($rss2_url = get_bloginfo_rss('rss2_url')); ?>" class="profile ua-social-button w-clearfix w-inline-block">
           <div class="button-icon rss"></div>
           <div class="button-text">rss</div>
         </a>
-        <a href="https://www.youtube.com/channel/UC092vWM64UaG_8M4axrOfLw" class="profile ua-social-button w-clearfix w-inline-block">
+        <a target="_blank" href="https://www.youtube.com/channel/UC092vWM64UaG_8M4axrOfLw" class="profile ua-social-button w-clearfix w-inline-block">
           <div class="button-icon youtube"></div>
           <div class="button-text">YouTube</div>
         </a>
-        <a href="https://twitter.com/UnlimitedAmmo" class="profile ua-social-button w-clearfix w-inline-block">
+        <a target="_blank" href="https://twitter.com/UnlimitedAmmo" class="profile ua-social-button w-clearfix w-inline-block">
           <div class="button-icon twitter"></div>
           <div class="button-text">Twitter</div>
+        </a>
+		<a target="_blank" href="https://discord.gg/5hH4VxW" class="profile ua-social-button w-clearfix w-inline-block">
+          <div class="button-icon discord"><img src="https://unlimitedammo.de/wp-content/themes/UA-html5blank/custom-assets/images/discord.png" width="17px" /></div>
+          <div class="button-text">Discord</div>
         </a>
         <!--a href="#" class="profile ua-social-button w-clearfix w-inline-block">
           <div class="button-icon instagram"></div>
