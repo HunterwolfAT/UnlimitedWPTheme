@@ -4,6 +4,10 @@ $unlimitedheader = get_the_author();
 
 switch ($unlimitedheader) {
 		
+	case "Flimmerspieler":
+		echo 'https://yt3.ggpht.com/P6yZqvFwHmf_n5vN1piZlcsbr27flHBhcYu3iR0gd_qETeC-kaI40FqB9uNT0SU1T0yKpJlQWw=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
+		break;
+
 	case "Baka Critic":
 		echo 'https://yt3.ggpht.com/YlyrvMJPOu3c7VTRgm0fxxKv0M7c1RUdr52x02wbOex4srHlZjnJ9t1OweV4D4sbQwOeChUeMQ=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
 		break;
@@ -17,7 +21,7 @@ switch ($unlimitedheader) {
 		break;
 		
 	case "Gescheit Gespielt":
-		echo 'https://yt3.ggpht.com/X-VgC0aBK7Ll861Lo6cJaAN2x74K2BaAnd1DMXJAMW0abNsOWGeIMu3WeDTpsVr6RVdJ4ievfg=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
+		echo 'https:////yt3.ggpht.com/40SVxD3g6RkJ8RuBRUuO9G2Msk-mnkAaJn6Dp1IPPoOeydxInH5ucuo12EIkmdu8P95W7Kxfig=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
 		break;
 		
     case "AuBanan!":
@@ -38,6 +42,10 @@ switch ($unlimitedheader) {
 	
     case "Tommysomething":
 		echo 'https://yt3.ggpht.com/jRKZD3zuz_nSwuN8wj6R_NlOGEbCXhz356krPCpMGh3RI98FhCzok1yYQRaUiUmCwqFjVqA0iMI=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
+		break;
+		
+    case "Entenburg":
+		echo 'https://yt3.ggpht.com/8m9VEgUW2NlL9rrgy_OXgj3mPRNmTInvRnvmlOmCNDKyQqcyDyf8weDLv0TQ_cB9bgb7a-4uOg=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
 		break;
 		
 }

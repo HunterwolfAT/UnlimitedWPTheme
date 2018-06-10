@@ -5,10 +5,15 @@ $unlimitedid = get_the_author_meta('ID');
 
 switch ($unlimiteduser) {
 		
+	case "Flimmerspieler":
+
+	echo 'https://twitter.com/cliffcoam';
+		break;
+	
 	case "Baka Critic":
 		
         echo 'https://twitter.com/89Takezo';
-			break;
+		break;
 		
 	case "SpeckObst":
 		
@@ -56,6 +61,12 @@ switch ($unlimiteduser) {
     case "Tommysomething":
 		
         echo 'https://twitter.com/Tommysomething';
+        
+		break;
+
+    case "Entenburg":
+		
+        echo 'https://twitter.com/EmilEntenburg';
         
 		break;
 }

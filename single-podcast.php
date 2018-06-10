@@ -15,59 +15,21 @@
 ?>
 
 <!-- Wenn Post -->
-<?php //echo $posttype; ?>
+<?php // echo $posttype; ?>
 
 <?php if ( $posttype == 'post') { ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 
-<script src="https://unlimitedammo.de/wp-content/themes/UA-html5blank/js/cookiesfunctions.js"></script>
 
-<script>
-	window.onload = function() {
-		// Get rid of "no javascript" message
-		$("div").remove(".nojavascript");
 
-		// Check if cookie to show youtube embedd is set
-		var youtubeEnabled = getCookie('UnlimitedAmmoYouTubeCookies');
-		if (youtubeEnabled)
-			showVideo();
-		else
-			showWarning();
-	}
-	function openYouTubeLink() {
-		var youtubeid = <?php echo json_encode($youtubeID, JSON_HEX_TAG) ?>;
-	    window.open("https://www.youtube.com/watch?v=" + youtubeid,"_self");
-	}
-	function agreeToYouTubeTracking() {
-	    setCookie('UnlimitedAmmoYouTubeCookies','true',30);
-	    showVideo();
-	}
-	function showWarning() {
-		$(".ua-video").prepend("<div class=\"ua-modal detail-paragraph warning\"><b>Videos auf Unlimited Ammo sind via YouTube eingebettet.</b></br>Klickst du hier auf ein Video, werden YouTube's Cookies gesetzt und YouTube kann dich auf Unlimited Ammo nachverfolgen.</br>Mehr auf <a href=\"https://unlimitedammo.de/datenschutzerklarung/\">unserer Datenschutzerkl&auml;rung</a></br></br><a href=\"\" type=\"button\" onclick=\"openYouTubeLink()\">> Video direkt auf YouTube ansehen</a></br><a href=\"\" type=\"button\" onclick=\"agreeToYouTubeTracking()\">> Cookies akzeptieren und (via ein Cookie von uns) f&uuml;r 30 Tage merken</a></div></div>");
-	}
-	function showVideo() {
-	    $("div").remove(".warning");
-	    $("div").remove(".featuredimage");
-	    $(".ua-video").append("<div rel=\"0\" showinfo=\"0\" style=\"padding-top:56.17021276595745%\" class=\"video w-embed w-video\"><iframe class=\"embedly-embed\" src=\"https://www.youtube-nocookie.com/embed/<?php echo $youtubeID; ?>?rel=0&amp;showinfo=0\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"\"></iframe></div>");
-	};
-</script>
+
 
 <div class="section-5">
     <div class="div-block ua-video">
-	    <noscript>
-		<div class="ua-modal nojavascript">
-		<div class="detail-paragraph">
-		    Hey, ein Internetbewusster User, wie schön!</b>
-		    Hier ist der Link zum Video, klopf ihn in VLC oder so rein:</br>
-		    <a href="https://www.youtube.com/watch?v=<?php echo $youtubeID; ?>">https://www.youtube.com/watch?v=<?php echo $youtubeID; ?></a></br>
-		    Wenn du wie die anderen Sterblichen das Video eingebettet gucken willst, dann erlaube Javascript!
-		</div>
-		</div>
-	    </noscript>
-	<div class="featuredimage ua-thumbnail-image" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
-	</div>
+      <div rel="0" showinfo="0" style="padding-top:56.17021276595745%" class="video w-embed w-video"><iframe class="embedly-embed" src="https://www.youtube.com/embed/<?php echo $youtubeID; ?>?rel=0&amp;showinfo=0" scrolling="no" frameborder="0" allowfullscreen=""></iframe></div>
+    </div>
   </div>
 
 <div class="section">
@@ -143,7 +105,8 @@
 
 <!-- Wenn Podcast -->
 
-<?php } elseif ( $posttype == 'podcast') { ?>
+<?php //} elseif ( $posttype == 'podcast') { ?>
+<?php } else { ?>
 
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>

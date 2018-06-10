@@ -542,4 +542,56 @@ function my_post_queries( $query ) {
 }
 add_action( 'pre_get_posts', 'my_post_queries' );
 
+
+
+
+function custom_post_type_article() {
+
+// Bezeichner fuers Verwalten im Backend werden festgelegt
+
+$labels = array(
+    'name'               => _x( 'Artikel', 'post type general name' ),
+    'singular_name'      => _x( 'Artikel', 'post type singular name' ),
+    'add_new'            => __( 'Neuen Artikel anlegen'),
+    'add_new_item'       => __( 'Neuen Artikel anlegen' ),
+    'edit_item'          => __( 'Artikel bearbeiten' ),
+    'new_item'           => __( 'Neuer Artikel' ),
+    'all_items'          => __( 'Alle Artikel' ),
+    'view_item'          => __( 'Artikel ansehen' ),
+    'search_items'       => __( 'Artikel durchsuchen' ),
+    'not_found'          => __( 'Keine Artikel gefunden' ),
+    'not_found_in_trash' => __( 'Keine Artikel im Papierkorb gefunden' ),
+    'parent_item_colon'  => '',
+    'menu_name'          => 'Artikel'
+);
+
+// Werte des neuen Custom Post Types werden zugewiesen
+
+$args = array(
+    'labels'              => $labels,
+    'description'         => 'Hier sind all unsere Artikel zu finden',
+    'hierarchical'        => false,
+    'public'              => true,
+    'show_ui'             => true,
+    'show_in_menu'        => true,
+    'show_in_nav_menus'   => true,
+    'show_in_admin_bar'   => true,
+    'publicly_queryable'  => true,
+    'exclude_from_search' => false,
+    'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'author' ),
+    'taxonomies'          => array( 'post_tag', 'category' ),
+    'has_archive'         => true,
+    'can_export'          => false,
+    'menu_position'       => 5,
+    'capability_type'     => 'post',
+    'rewrite'             => array('slug' => 'artikel' )
+);
+
+register_post_type( 'artikel', $args );
+}
+
+add_action( 'init', 'custom_post_type_article' );
+
 ?>
+		
+		

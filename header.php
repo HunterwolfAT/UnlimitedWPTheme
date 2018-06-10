@@ -47,6 +47,11 @@
 
 <body class="body">
 
+	<?php
+$unlimiteduser = get_the_author();
+$unlimitedid = get_the_author_meta('ID');
+	?>
+
 
 <?php if (is_front_page() || is_home()) { ?>
 	
