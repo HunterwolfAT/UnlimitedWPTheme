@@ -5,7 +5,7 @@ $unlimitedid = get_the_author_meta('ID');
 
 switch ($unlimiteduser) {
 		
-	case "Flimmerspieler":
+	case "Cliffy Blyro":
         echo '<a target="_blank" href="https://www.youtube.com/user/Flimmerspieler" class="ua-social-button w-clearfix w-inline-block">
 	<div class="button-icon youtube"></div>
 	<div class="button-text">YouTube</div>

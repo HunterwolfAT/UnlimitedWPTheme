@@ -60,7 +60,7 @@
 			    showVideo();
 			}
 			function showWarning() {
-				$(".ua-video").prepend("<div class=\"ua-modal detail-paragraph warning\"><b>Videos auf Unlimited Ammo sind via YouTube eingebettet.</b></br>Klickst du hier auf ein Video, werden YouTube's Cookies gesetzt und YouTube kann dich auf Unlimited Ammo nachverfolgen.</br>Mehr auf <a href=\"https://unlimitedammo.de/datenschutzerklarung/\">unserer Datenschutzerkl&auml;rung</a></br><button type=\"button\" onclick=\"openYouTubeLink()\">Video direkt auf YouTube ansehen</button></br><button type=\"button\" onclick=\"agreeToYouTubeTracking()\">Cookies akzeptieren und (via ein Cookie von uns) f&uuml;r 30 Tage merken</button></div></div>");
+				$(".ua-video").prepend("<div class=\"ua-modal detail-paragraph warning\"><b>Videos auf Unlimited Ammo sind via YouTube eingebettet.</b></br>Klickst du hier auf ein Video, werden YouTube's Cookies gesetzt und YouTube kann dich auf Unlimited Ammo nachverfolgen.</br>Mehr auf <a href=\"https://unlimitedammo.de/datenschutzerklarung/\">unserer Datenschutzerkl&auml;rung</a></br><a href=\"#\" onclick=\"openYouTubeLink()\">> Video direkt auf YouTube ansehen</a></br><a href=\"\" onclick=\"agreeToYouTubeTracking()\">> Cookies akzeptieren und (via ein Cookie von uns) f&uuml;r 30 Tage merken</a></div></div>");
 			}
 			function showVideo() {
 			    $("div").remove(".warning");

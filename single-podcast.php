@@ -119,7 +119,7 @@
 
 <div class="ua-section-heading" style="background-color: rgba(255,255,255,0.04)">
     <div class="grid-base w-clearfix">
-      <h1 class="headline-main">Ulimited</h1>
+      <h1 class="headline-main">Unlimited</h1>
       <h1 class="headline-main headline-main-sub">Topic</h1><a target="_blank" href="https://itunes.apple.com/de/podcast/unlimited-topic/id1257896606?mt=2" class="itunes ua-section-interface w-button"></a><a target="_blank" href="https://unlimitedammo.de/feed/mp3/" class="ua-section-interface w-button"></a></div>
   </div>
 

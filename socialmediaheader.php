@@ -4,8 +4,8 @@ $unlimitedheader = get_the_author();
 
 switch ($unlimitedheader) {
 		
-	case "Flimmerspieler":
-		echo 'https://yt3.ggpht.com/P6yZqvFwHmf_n5vN1piZlcsbr27flHBhcYu3iR0gd_qETeC-kaI40FqB9uNT0SU1T0yKpJlQWw=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
+	case "Cliffy Blyro":
+		echo 'https://yt3.ggpht.com/DLcmIqKUr_UEBlEpk8RRw5hIudGb-sv11C8WjC3_qJFmwdJRoEgPlwguKuv0lGd7f2KakI8Hcg=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
 		break;
 
 	case "Baka Critic":
@@ -45,7 +45,7 @@ switch ($unlimitedheader) {
 		break;
 		
     case "Entenburg":
-		echo 'https://yt3.ggpht.com/8m9VEgUW2NlL9rrgy_OXgj3mPRNmTInvRnvmlOmCNDKyQqcyDyf8weDLv0TQ_cB9bgb7a-4uOg=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
+		echo 'https://yt3.ggpht.com/YD6U4uqy4XGoRteIZGDNn8n-XnzRFbfvTGPdoU7uaGRI1cSV9wfGu7T93HFEHmt8R1SFgmQ5Nw=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
 		break;
 		
 }

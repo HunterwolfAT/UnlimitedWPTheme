@@ -5,7 +5,7 @@ $unlimitedid = get_the_author_meta('ID');
 
 switch ($unlimiteduser) {
 		
-	case "Flimmerspieler":
+	case "Cliffy Blyro":
 
 	echo 'https://twitter.com/cliffcoam';
 		break;

@@ -246,6 +246,10 @@ ol {
   margin-top: 0px;
   margin-bottom: 10px;
   padding-left: 40px;
+  font-size: 1rem;
+}
+.ua-taglist ul {
+  font-size: 1em;
 }
 .w-list-unstyled {
   padding-left: 0;
