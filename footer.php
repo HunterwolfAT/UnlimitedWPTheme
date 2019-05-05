@@ -17,6 +17,11 @@
           <div class="button-icon discord"><img src="https://unlimitedammo.de/wp-content/themes/UA-html5blank/custom-assets/images/discord.png" width="17px" /></div>
           <div class="button-text">Discord</div>
         </a>
+        </a>
+		<a target="_blank" href="https://www.patreon.com/unlimitedammo" class="profile ua-social-button w-clearfix w-inline-block">
+          <div class="button-icon patreon"><img src="https://unlimitedammo.de/wp-content/themes/UA-html5blank/custom-assets/images/patreon.png" width="17px" /></div>
+          <div class="button-text">Patreon</div>
+        </a>
         <!--a href="#" class="profile ua-social-button w-clearfix w-inline-block">
           <div class="button-icon instagram"></div>
           <div class="button-text">Instagram</div>
