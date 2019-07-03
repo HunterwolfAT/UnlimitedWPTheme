@@ -497,7 +497,12 @@ function contributors() {
 
 	foreach($authors as $author) {
 		if ($author->ID != 9) {		// "UnlimitedAmmo" ist ja kein Teammitglied
-			echo "<a class='ua-team-item w-inline-block' href=\"".get_author_posts_url($author->ID);
+			#echo "<a class='ua-team-item w-inline-block' href=\"".get_author_posts_url($author->ID);
+			if ($author->ID == 8) {	// Alex ist ein Special Case - link auf seine Seite, statt Author Seite
+				echo "<a class='ua-team-item w-inline-block' href=\"https://grafiktyp.net";
+			} else {
+				echo "<a class='ua-team-item w-inline-block' href=\"".get_author_posts_url($author->ID);
+			}
 			echo "\">";
 			#echo "<img src=\"" . substr(get_avatar($author->ID), 17, -70) . ".jpg\" class='image-24'\>";
 			echo "<img src=\""; get_pure_avatar_url($author->ID); echo "\" class='image-24'\>";
