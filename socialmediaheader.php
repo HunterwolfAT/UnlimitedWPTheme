@@ -47,6 +47,10 @@ switch ($unlimitedheader) {
     case "Entenburg":
 		echo 'https://yt3.ggpht.com/YD6U4uqy4XGoRteIZGDNn8n-XnzRFbfvTGPdoU7uaGRI1cSV9wfGu7T93HFEHmt8R1SFgmQ5Nw=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
 		break;
+
+   case "Emjay Imba":
+		echo 'https://yt3.ggpht.com/K-DrswDy_m8axZQxiH8nMcFZeE8XGrfeY1i-ldyY6UjZm1VO99ckNfheboFdL_ETdBaCIygD=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no';
+		break;
 		
 }
 
